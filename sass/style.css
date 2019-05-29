@@ -182,7 +182,7 @@ body {
 }
 .hero {
   background: #e0d6d4 url("../image/hero/hero-bg.jpg") no-repeat center top;
-  background-size: contain;
+  background-size: cover;
   padding-top: 120px;
   padding-bottom: 270px;
   text-align: right;
@@ -199,15 +199,19 @@ body {
   font-family: "Proxima Nova Semibold", sans-serif;
 }
 
+@media (max-width: 1199px) {
+  .hero {
+    background-position: top left 25%;
+  }
+}
 @media (max-width: 991px) {
   .hero {
-    background-size: cover;
-    background-position: top left -200px;
+    background-position: top left 30%;
   }
 }
 @media (max-width: 576px) {
   .hero {
-    background-position: top left -400px;
+    background-position: top left 35%;
   }
 }
 
