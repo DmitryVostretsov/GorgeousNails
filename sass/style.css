@@ -129,7 +129,7 @@ body {
   transform: translateY(-200%);
   opacity: 0;
 }
-.menu_active {
+.menu__active {
   transform: translateY(0);
   opacity: 1;
 }
