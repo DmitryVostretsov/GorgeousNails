@@ -261,5 +261,40 @@ body {
     margin-bottom: 50px;
   }
 }
+.contacts {
+  background-color: #e0d6d4;
+}
+.contacts-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contacts-block__item {
+  text-align: center;
+}
+.contacts__image {
+  margin-bottom: 20px;
+}
+.contacts__text {
+  font-size: 16px;
+}
+.contacts__link {
+  text-decoration: none;
+  color: #262626;
+}
+.contacts__address {
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .contacts-block__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contacts__address {
+    min-width: 200px;
+    margin: auto;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
