@@ -10,7 +10,7 @@
     <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script language="JavaScript" type="text/javascript">
         $(document).ready(function () {
-            $('.menu-button').on('click', function(e) {
+            $('.menu-button').on('click', function (e) {
                 e.preventDefault();
                 $('.menu').toggleClass('menu__active');
             })
@@ -137,9 +137,27 @@
     </section>
     <!-- /.section contacts -->
     <div class="map" id="map">
-        <script type="text/javascript" charset="utf-8" async
-                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A39383e1fea64e163a12e8b8706cc74c385c930eea74d32560ecc4da4dd52b55c&amp;
-                width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=false"></script>
+        <a class="dg-widget-link"
+           href="http://2gis.ru/ekaterinburg/firm/70000001031476782/center/60.54202795028687,56.83216500322189/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть
+            на карте Екатеринбурга</a>
+        <div class="dg-widget-link"><a
+                href="http://2gis.ru/ekaterinburg/firm/70000001031476782/photos/70000001031476782/center/60.54202795028687,56.83216500322189/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии
+            компании</a></div>
+        <div class="dg-widget-link"><a
+                href="http://2gis.ru/ekaterinburg/center/60.54133,56.831591/zoom/17/routeTab/rsType/bus/to/60.54133,56.831591╎Gorgeous nails, кабинет ногтевого сервиса?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти
+            проезд до Gorgeous nails, кабинет ногтевого сервиса</a></div>
+        <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
+        <script charset="utf-8">new DGWidgetLoader({
+            "width": "100%",
+            "height": 400,
+            "borderColor": "#a3a3a3",
+            "pos": {"lat": 56.83216500322189, "lon": 60.54202795028687, "zoom": 17},
+            "opt": {"city": "ekaterinburg"},
+            "org": [{"id": "70000001031476782"}]
+        });</script>
+        <noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в
+            настройках вашего браузера.
+        </noscript>
     </div>
 </main>
 
