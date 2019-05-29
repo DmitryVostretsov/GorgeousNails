@@ -7,6 +7,15 @@
     <title>Gorgeous nails</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="sass/style.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-button').on('click', function(e) {
+                e.preventDefault();
+                $('.menu').toggleClass('menu__active');
+            })
+        })
+    </script>
 </head>
 <body>
 <header class="header">
@@ -28,11 +37,11 @@
     <div class="navbar">
         <div class="container">
             <div class="navbar-wrap">
-                <button class="menu-button navbar__menu-button">
+                <a class="menu-button navbar__menu-button">
                     <span class="menu-button__line"></span>
                     <span class="menu-button__line"></span>
                     <span class="menu-button__line"></span>
-                </button>
+                </a>
                 <div class="logo navbar__logo">
                     <strong class="logo__text">Gorgeous nails</strong>
                     <span class="logo__description">кабинет ногтевого мастера</span>
