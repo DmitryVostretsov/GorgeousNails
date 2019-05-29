@@ -1,0 +1,42 @@
+.footer
+  padding: 40px 0
+  background-color: #262626
+  color: #ffffff
+  &-block
+    display: flex
+    justify-content: space-between
+  a
+    color: #ffffff
+    text-decoration: none
+  &__title
+    margin-top: 0
+    margin-bottom: 8px
+    font-size: 18px
+    text-transform: uppercase
+    +bold
+  &__subtitle
+    display: block
+    margin-bottom: 48px
+  &__copy
+    color: #767676
+  &__contacts
+    text-align: right
+  &__phone
+    display: block
+    margin-bottom: 20px
+    font-size: 20px
+    +bold
+  &-social
+    &__link
+      margin-left: 10px
+@media (max-width: 576px)
+  .footer
+    &-block
+      flex-direction: column
+      align-items: center
+      text-align: center
+    &__contacts
+      margin-top: 24px
+      text-align: center
+    &__subtitle
+      margin-bottom: 24px
