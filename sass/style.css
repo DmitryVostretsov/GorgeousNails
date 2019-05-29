@@ -261,6 +261,11 @@ body {
     margin-bottom: 50px;
   }
 }
+@media (max-width: 576px) {
+  .stock-block__image {
+    max-width: 250px;
+  }
+}
 .contacts {
   background-color: #e0d6d4;
 }
