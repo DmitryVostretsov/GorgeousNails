@@ -267,6 +267,9 @@ body {
     max-width: 250px;
   }
 }
+.staff {
+  background-color: #e0d6d4;
+}
 .staff-block {
   display: flex;
   justify-content: center;
