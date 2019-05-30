@@ -302,7 +302,6 @@ body {
 .certificate-block__item {
   flex-basis: 33%;
   text-align: center;
-  margin-bottom: 100px;
 }
 .certificate-block__text {
   font-family: "Proxima Nova Semibold", sans-serif;
