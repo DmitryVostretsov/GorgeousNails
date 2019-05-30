@@ -267,6 +267,30 @@ body {
     max-width: 250px;
   }
 }
+.staff-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.staff-block__text {
+  margin-left: 70px;
+  flex-basis: 50%;
+  font-size: 20px;
+}
+.staff-block__image {
+  margin: 20px 0;
+}
+.staff-block__image img {
+  border-radius: 50%;
+  border: 8px #d2180c double;
+}
+
+@media (max-width: 768px) {
+  .staff-block__text {
+    margin-left: 0px;
+    flex-basis: 100%;
+  }
+}
 .contacts {
   background-color: #e0d6d4;
 }
