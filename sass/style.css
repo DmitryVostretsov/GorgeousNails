@@ -294,6 +294,36 @@ body {
     flex-basis: 100%;
   }
 }
+.certificate-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.certificate-block__item {
+  flex-basis: 33%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.certificate-block__text {
+  font-family: "Proxima Nova Semibold", sans-serif;
+  padding: 10px 0;
+}
+.certificate-block__image {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .certificate {
+    justify-content: center;
+  }
+  .certificate-block__item {
+    flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+  .certificate-block__image {
+    max-width: 80%;
+  }
+}
 .contacts {
   background-color: #e0d6d4;
 }
