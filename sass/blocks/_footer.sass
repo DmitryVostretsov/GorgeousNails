@@ -27,8 +27,55 @@
     font-size: 20px
     +bold
   &-social
-    &__link
-      margin-left: 10px
+    display: flex
+    justify-content: center
+    align-items: center
+.social
+  color: #fff
+  list-style: none
+  padding: 0
+  display: flex
+  justify-content: space-between
+  width: 300px
+  &__item
+    height: 60px
+    width: 60px
+    border-radius: 50%
+    border: 5px solid #fff
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 20px
+    transition: border-color 0.3s, box-shadow 0.6s, color 0.3s, text-shadow 0.6s
+
+.whatsapp:hover
+  $color: #25D366
+  border-color: $color
+  box-shadow: 0 0 20px $color
+  color: $color
+  text-shadow: 0 0 10px $color
+
+.vk:hover
+  $color: #4c75a3
+  border-color: $color
+  box-shadow: 0 0 20px $color
+  color: $color
+  text-shadow: 0 0 10px $color
+
+.instagram:hover
+  $color: #bc2a8d
+  border-color: $color
+  box-shadow: 0 0 20px $color
+  color: $color
+  text-shadow: 0 0 10px $color
+
+.odnoklassniki:hover
+  $color: #FFAB00
+  border-color: $color
+  box-shadow: 0 0 20px $color
+  color: $color
+  text-shadow: 0 0 10px $color
+
 @media (max-width: 576px)
   .footer
     &-block
