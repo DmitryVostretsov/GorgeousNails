@@ -1,2 +1,48 @@
 .services
   background-color: $block-background-color
+  &-block
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    &__item
+      flex-basis: 45%
+      text-align: left
+      margin-bottom: 100px
+    &__price
+      width: 20%
+      text-align: right
+    &__table
+      width: 100%
+      font-size: 20px
+      border-collapse: collapse
+      &>tbody
+        &>tr
+          border-bottom: 1px solid #c2c2c2
+          &:last-child
+            border-bottom: none
+          &>td
+            padding: 10px 0
+            &:first-child
+              border-right: 1px solid #c2c2c2
+          &>th
+            border-bottom: 2px solid #000000
+            padding-bottom: 30px
+            font-size: 28px
+            font-weight: normal
+            color: $primary
+@media (max-width: 768px)
+  .services
+    &-block
+      &__item
+        flex-basis: 100%
+        margin-bottom: 50px
+@media (max-width: 576px)
+  .services
+    &-block
+      &__table
+        font-size: 14px
+        &>tbody
+          &>tr
+            &>th
+              padding-bottom: 20px
+              font-size: 20px
