@@ -239,7 +239,6 @@ body {
   }
 }
 .stock-block {
-  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -252,6 +251,11 @@ body {
   color: #890e4f;
   font-family: "Proxima Nova Semibold", sans-serif;
   padding: 10px 0px;
+}
+.stock-block__image {
+  margin: auto;
+  padding: 0 5px;
+  max-width: 100%;
 }
 
 @media (max-width: 991px) {
