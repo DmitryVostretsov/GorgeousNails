@@ -5,13 +5,19 @@
     justify-content: space-between
     flex-wrap: wrap
     &__item
-      flex-basis: 33%
+      flex-basis: 30%
       text-align: center
     &__text
       +bold
       padding: 10px 0
     &__image
       max-width: 100%
+      padding: 0 5px
+@media (max-width: 1200px)
+  .certificate
+    &-block
+      &__item
+        flex-basis: 50%
 @media (max-width: 768px)
   .certificate
     justify-content: center
@@ -21,3 +27,4 @@
         margin-bottom: 50px
       &__image
         max-width: 80%
+        margin: auto

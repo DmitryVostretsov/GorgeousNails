@@ -6,9 +6,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Gorgeous nails</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="sass/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script language="JavaScript" type="text/javascript">
         $(document).ready(function () {
             $('.menu-button').on('click', function (e) {
@@ -283,6 +284,24 @@
                     <img src="image/certificate/certificate-1.jpg" alt="" class="certificate-block__image">
                     <!-- /.certificate-block__image --></div>
                 <!-- /.certificate-block__item -->
+                <div class="certificate-block__item">
+                    <p class="certificate-block__text">Сертификат о<br>прохождении курсов<br>по маникюру</p>
+                    <!-- /.certificate-block__text -->
+                    <img src="image/certificate/certificate-1.jpg" alt="" class="certificate-block__image">
+                    <!-- /.certificate-block__image --></div>
+                <!-- /.certificate-block__item -->
+                <div class="certificate-block__item">
+                    <p class="certificate-block__text">Сертификат о<br>прохождении курсов<br>по педикюру</p>
+                    <!-- /.certificate-block__text -->
+                    <img src="image/certificate/certificate-1.jpg" alt="" class="certificate-block__image">
+                    <!-- /.certificate-block__image --></div>
+                <!-- /.certificate-block__item -->
+                <div class="certificate-block__item">
+                    <p class="certificate-block__text">Сертификат о<br>прохождении курсов<br>по дизайну</p>
+                    <!-- /.certificate-block__text -->
+                    <img src="image/certificate/certificate-1.jpg" alt="" class="certificate-block__image">
+                    <!-- /.certificate-block__image --></div>
+                <!-- /.certificate-block__item -->
             </div>
             <!-- /.certificate-block -->
         </div>
@@ -402,4 +421,34 @@
 
 </body>
 <script type="text/javascript" src="//w225736.yclients.com/widgetJS" charset="UTF-8"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.certificate-block').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: false,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                  }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        })
+    });
+</script>
 </html>
